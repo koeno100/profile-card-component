@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit');
+
+body {
+    font-family: 'Outfit';
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+body::before, body::after {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+body::before {
+    left: 0;
+    top: 0;
+    background: url('images/bg-pattern-top.svg') no-repeat bottom right;
+}
+
+body::after {
+    left: 100%;
+    top: 100%;
+    background: url('images/bg-pattern-top.svg') no-repeat top left;
+}
+
+main {
+    background-color: white;
+    min-width: 21.875rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    overflow: hidden;
+    top: 0.25rem;
+}
+
+.profile-header {
+    background: url('./images/bg-pattern-card.svg') no-repeat;
+    height: 8.75rem;
+}
+
+.profile {
+    margin-top: -3rem;
+}
+
+h3 {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+h3 > .age {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.city {
+    display: block;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.profile-picture {
+    border: 0.32rem solid white;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.stats {
+    border-top: 0.0625rem solid hsl(0, 0%, 91%);
+}
+
+.stats-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+.stat-value, .stat-category {
+    display: block;
+}
+
+.stat-value {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.stat-category {
+    font-weight: 400;
+    font-size: 0.6875rem;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 0.1rem;
+}
+
+main, footer{
+    margin-top: auto;
+}
+
+footer {
+    padding: 0.5rem;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
