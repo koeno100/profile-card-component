@@ -55,7 +55,7 @@ I want to continue improving my semantic HTML, flexbox and responsiveness skills
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@koeno100](https://www.frontendmentor.io/profile/koeno100)
 
 ## Acknowledgments
 
